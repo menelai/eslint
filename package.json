@@ -1,0 +1,49 @@
+{
+  "name": "@kovalenko/eslint",
+  "version": "0.0.0",
+  "description": "Shared eslint rules",
+  "author": "kovalenko@gmail.com",
+  "license": "MIT",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18.x"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "peerDependencies": {
+    "eslint": ">= 9",
+    "eslint-import-resolver-typescript": "",
+    "eslint-plugin-import": "",
+    "@stylistic/eslint-plugin": "",
+    "@typescript-eslint/eslint-plugin": "",
+    "@typescript-eslint/parser": ""
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/npm": "^12.0.1",
+    "semantic-release": "^24.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/menelai/eslint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/menelai/eslint/issues"
+  },
+  "files": [
+    "index.js",
+    "nestjs/**/*",
+    "angular/**/*",
+    "package.json",
+    "package-lock.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
