@@ -1,6 +1,6 @@
 {
   "name": "@kovalenko/eslint",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Shared eslint rules",
   "author": "kovalenko@gmail.com",
   "license": "MIT",

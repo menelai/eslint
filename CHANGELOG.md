@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/menelai/eslint/compare/v1.0.2...v1.0.3) (2025-04-25)
+
+
+### Bug Fixes
+
+* @angular-eslint/template/eqeqeq moved ([c473f42](https://github.com/menelai/eslint/commit/c473f423ed04c51028804827499fa07c46060d70))
+
 ## [1.0.2](https://github.com/menelai/eslint/compare/v1.0.1...v1.0.2) (2025-04-25)
 
 
