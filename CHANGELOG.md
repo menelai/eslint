@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/menelai/eslint/compare/v1.0.1...v1.0.2) (2025-04-25)
+
+
+### Bug Fixes
+
+* @angular-eslint/template/eqeqeq ([1280e6f](https://github.com/menelai/eslint/commit/1280e6fabfbba366871d97447d4a34931424e887))
+
 ## [1.0.1](https://github.com/menelai/eslint/compare/v1.0.0...v1.0.1) (2025-04-21)
 
 
