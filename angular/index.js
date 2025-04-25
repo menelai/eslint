@@ -166,6 +166,12 @@ module.exports = {
             'type': 'attribute'
           }
         ],
+        "@angular-eslint/template/eqeqeq": [
+          "error",
+          {
+            "allowNullOrUndefined": true
+          }
+        ],
         'import/no-unresolved': 'off',
         'import/order': [
           'error',
