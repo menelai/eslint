@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/menelai/eslint/compare/v1.0.3...v1.0.4) (2025-04-26)
+
+
+### Bug Fixes
+
+* indents ([4206e70](https://github.com/menelai/eslint/commit/4206e706f5d6aaac6d0038e8b88fb40ac16c0da4))
+
 ## [1.0.3](https://github.com/menelai/eslint/compare/v1.0.2...v1.0.3) (2025-04-25)
 
 
