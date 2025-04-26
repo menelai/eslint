@@ -13,11 +13,11 @@
   },
   "peerDependencies": {
     "eslint": ">= 9",
-    "eslint-import-resolver-typescript": "",
-    "eslint-plugin-import": "",
-    "@stylistic/eslint-plugin": "",
-    "@typescript-eslint/eslint-plugin": "",
-    "@typescript-eslint/parser": ""
+    "eslint-import-resolver-typescript": "^4.x",
+    "eslint-plugin-import": "^2.x",
+    "@stylistic/eslint-plugin": "^2.x",
+    "@typescript-eslint/eslint-plugin": "^8.x",
+    "@typescript-eslint/parser": "^8.x"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.1",
