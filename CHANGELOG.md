@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/menelai/eslint/compare/v1.0.4...v1.1.0) (2026-06-11)
+
+
+### Features
+
+* flat config ([b6daf2f](https://github.com/menelai/eslint/commit/b6daf2facba5cdbcc1d45e1d9c6c369044250c4a))
+
 ## [1.0.4](https://github.com/menelai/eslint/compare/v1.0.3...v1.0.4) (2025-04-26)
 
 
