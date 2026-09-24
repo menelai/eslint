@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/menelai/eslint/compare/v1.1.0...v1.2.0) (2026-09-24)
+
+
+### Bug Fixes
+
+* update package-lock.json ([e34ecc3](https://github.com/menelai/eslint/commit/e34ecc3cb528326f9dfab25deb8c8691d8f4365b))
+
+
+### Features
+
+* support eslint 10 ([550a885](https://github.com/menelai/eslint/commit/550a88531cbc9a6aac4691e5ed387bd6f54cd934))
+
 # [1.1.0](https://github.com/menelai/eslint/compare/v1.0.4...v1.1.0) (2026-06-11)
 
 
