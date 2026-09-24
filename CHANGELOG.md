@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/menelai/eslint/compare/v1.2.0...v2.0.0) (2026-09-24)
+
+
+### Features
+
+* support eslint 10 ([0ab21dd](https://github.com/menelai/eslint/commit/0ab21dd7ca3671adf29096e38dd31fbe29deaadd))
+
+
+### BREAKING CHANGES
+
+* support eslint 10
+
 # [1.2.0](https://github.com/menelai/eslint/compare/v1.1.0...v1.2.0) (2026-09-24)
 
 
