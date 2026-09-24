@@ -4,7 +4,7 @@ const angularTemplateParser = require('@angular-eslint/template-parser');
 const stylistic = require('@stylistic/eslint-plugin');
 const tsEslint = require('@typescript-eslint/eslint-plugin');
 const tsParser = require('@typescript-eslint/parser');
-const importPlugin = require('eslint-plugin-import');
+const importPlugin = require('eslint-plugin-import-x');
 
 /**
  * Собирает recommended-правила из плагина по флагу meta.docs.recommended.
@@ -33,7 +33,6 @@ module.exports = [
       parser: tsParser,
       parserOptions: {
         project: ['tsconfig.json'],
-        createDefaultProgram: true,
       },
     },
     plugins: {
@@ -134,7 +133,7 @@ module.exports = [
 
       // Stylistic
       '@stylistic/indent': ['error', 2],
-      '@stylistic/quotes': ['error', 'single', { allowTemplateLiterals: true }],
+      '@stylistic/quotes': ['error', 'single', { allowTemplateLiterals: 'always' }],
 
       // Отключаем базовые в пользу @stylistic
       'indent': 'off',
@@ -162,6 +161,13 @@ module.exports = [
         },
       ],
       'eol-last': ['error', 'always'],
+      'operator-linebreak': [
+        'error',
+        'none',
+        {
+          overrides: { '&&': 'before', '||': 'before', '?': 'before', ':': 'before' },
+        },
+      ],
       'no-irregular-whitespace': [
         'error',
         {

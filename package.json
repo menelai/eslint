@@ -5,19 +5,25 @@
   "author": "kovalenko@gmail.com",
   "license": "MIT",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./angular": "./angular/index.js",
+    "./nestjs": "./nestjs/index.js",
+    "./package.json": "./package.json"
+  },
   "engines": {
-    "node": ">=18.x"
+    "node": ">=20.19.x"
   },
   "scripts": {
     "semantic-release": "semantic-release"
   },
   "peerDependencies": {
-    "eslint": ">= 9",
-    "eslint-import-resolver-typescript": "^4.x",
-    "eslint-plugin-import": "^2.x",
-    "@stylistic/eslint-plugin": "^2.x",
+    "eslint": ">= 10",
+    "eslint-plugin-import-x": "^4.x",
+    "@stylistic/eslint-plugin": "^5.x",
     "@typescript-eslint/eslint-plugin": "^8.x",
-    "@typescript-eslint/parser": "^8.x"
+    "@typescript-eslint/parser": "^8.x",
+    "@typescript-eslint/utils": "^8.x"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.1",

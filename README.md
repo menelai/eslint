@@ -4,8 +4,8 @@ Shared ESLint flat config для TypeScript-проектов на Angular и Nes
 
 ## Требования
 
-- Node.js >= 18
-- ESLint >= 9
+- Node.js >= 20.19
+- ESLint >= 10
 
 ## Установка
 
@@ -16,8 +16,7 @@ npm install -D @kovalenko/eslint \
   @stylistic/eslint-plugin \
   @typescript-eslint/eslint-plugin \
   @typescript-eslint/parser \
-  eslint-plugin-import \
-  eslint-import-resolver-typescript
+  eslint-plugin-import-x
 ```
 
 Для Angular дополнительно:
@@ -31,7 +30,9 @@ npm install -D \
 
 ## Использование
 
-### Angular
+Пакет поддерживает и CommonJS, и ES-модули (`exports` в `package.json`).
+
+### Angular, CommonJS
 
 `eslint.config.js`:
 
@@ -39,6 +40,18 @@ npm install -D \
 const angularConfig = require('@kovalenko/eslint/angular');
 
 module.exports = [
+  ...angularConfig,
+];
+```
+
+### Angular, ES-модули
+
+`eslint.config.mjs` (или `eslint.config.js` при `"type": "module"` в `package.json`):
+
+```js
+import angularConfig from '@kovalenko/eslint/angular';
+
+export default [
   ...angularConfig,
 ];
 ```
@@ -54,6 +67,8 @@ module.exports = [
   ...nestConfig,
 ];
 ```
+
+В ES-модулях: `import nestConfig from '@kovalenko/eslint/nestjs';`
 
 ### Расширение конфига
 
@@ -84,7 +99,7 @@ module.exports = [
 |---|---|
 | TypeScript | `@typescript-eslint` recommended + explicit types, member ordering |
 | Стиль | `@stylistic` — отступы 2 пробела, одинарные кавычки |
-| Импорты | `eslint-plugin-import` — сортировка групп, newlines между группами |
+| Импорты | `eslint-plugin-import-x` — сортировка групп, newlines между группами |
 | Core | `curly`, `semi`, `eol-last`, `comma-dangle`, `no-trailing-spaces` и др. |
 
 ### Angular

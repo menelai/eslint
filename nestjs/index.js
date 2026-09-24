@@ -1,7 +1,7 @@
 const stylistic = require('@stylistic/eslint-plugin');
 const tsEslint = require('@typescript-eslint/eslint-plugin');
 const tsParser = require('@typescript-eslint/parser');
-const importPlugin = require('eslint-plugin-import');
+const importPlugin = require('eslint-plugin-import-x');
 const js = require('@eslint/js');
 
 /** @type {import('eslint').Linter.Config[]} */
@@ -16,7 +16,6 @@ module.exports = [
       parser: tsParser,
       parserOptions: {
         project: ['tsconfig.json'],
-        createDefaultProgram: true,
       },
     },
     plugins: {
@@ -123,7 +122,7 @@ module.exports = [
       ],
 
       // Stylistic
-      '@stylistic/quotes': ['error', 'single', { allowTemplateLiterals: true }],
+      '@stylistic/quotes': ['error', 'single', { allowTemplateLiterals: 'always' }],
       '@stylistic/indent': [
         'error',
         2,
@@ -162,6 +161,13 @@ module.exports = [
         },
       ],
       'eol-last': ['error', 'always'],
+      'operator-linebreak': [
+        'error',
+        'none',
+        {
+          overrides: { '&&': 'before', '||': 'before', '?': 'before', ':': 'before' },
+        },
+      ],
       'no-irregular-whitespace': [
         'error',
         {
