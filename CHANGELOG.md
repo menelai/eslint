@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/menelai/eslint/compare/v2.0.0...v2.0.1) (2026-09-25)
+
+
+### Bug Fixes
+
+* operator-linebreak ([3cfa049](https://github.com/menelai/eslint/commit/3cfa0494855b6635294ce37ba67f4b50f362883f))
+
 # [2.0.0](https://github.com/menelai/eslint/compare/v1.2.0...v2.0.0) (2026-09-24)
 
 
