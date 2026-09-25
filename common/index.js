@@ -157,21 +157,7 @@ const tsConfig = {
       },
     ],
     'eol-last': ['error', 'always'],
-    'operator-linebreak': [
-      'error',
-      'none',
-      {
-        overrides: {
-          '&&': 'before',
-          '&': 'before',
-          '||': 'before',
-          '??': 'before',
-          '|': 'before',
-          '?': 'before',
-          ':': 'before',
-        },
-      },
-    ],
+    'operator-linebreak': ['error', 'before'],
     'no-irregular-whitespace': [
       'error',
       {
