@@ -10,22 +10,13 @@ Shared ESLint flat config для TypeScript-проектов на Angular и Nes
 ## Установка
 
 ```bash
-npm install -D @kovalenko/eslint \
-  eslint \
-  @eslint/js \
-  @stylistic/eslint-plugin \
-  @typescript-eslint/eslint-plugin \
-  @typescript-eslint/parser \
-  eslint-plugin-import-x
+npm install -D @kovalenko/eslint eslint @eslint/js @stylistic/eslint-plugin @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-import-x
 ```
 
 Для Angular дополнительно:
 
 ```bash
-npm install -D \
-  @angular-eslint/eslint-plugin \
-  @angular-eslint/eslint-plugin-template \
-  @angular-eslint/template-parser
+npm install -D @angular-eslint/eslint-plugin @angular-eslint/eslint-plugin-template @angular-eslint/template-parser
 ```
 
 ## Использование
@@ -98,7 +89,7 @@ module.exports = [
 | Категория | Плагин |
 |---|---|
 | TypeScript | `@typescript-eslint` recommended + explicit types, member ordering |
-| Стиль | `@stylistic` — отступы 2 пробела, одинарные кавычки |
+| Стиль | `@stylistic` — отступы 2 пробела (`ignoredNodes` для декораторов), одинарные кавычки |
 | Импорты | `eslint-plugin-import-x` — сортировка групп, newlines между группами |
 | Core | `curly`, `semi`, `eol-last`, `comma-dangle`, `no-trailing-spaces` и др. |
 
@@ -112,13 +103,7 @@ module.exports = [
 
 ### NestJS
 
-Дополнительно в `@stylistic/indent` настроены `ignoredNodes` для корректной обработки декораторов NestJS:
-
-```
-FunctionExpression > .params[decorators.length > 0]
-FunctionExpression > .params > :matches(Decorator, :not(:first-child))
-ClassBody.body > PropertyDefinition[decorators.length > 0] > .key
-```
+Дополнительно к общим правилам подключается `js.configs.recommended` (`@eslint/js`).
 
 ## Порядок членов класса
 

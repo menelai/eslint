@@ -43,6 +43,7 @@
     "index.js",
     "nestjs/**/*",
     "angular/**/*",
+    "common/**/*",
     "package.json",
     "package-lock.json",
     "README.md",
