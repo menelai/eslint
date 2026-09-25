@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/menelai/eslint/compare/v2.0.1...v2.0.2) (2026-09-25)
+
+
+### Bug Fixes
+
+* operator-linebreak global rule ([542c12a](https://github.com/menelai/eslint/commit/542c12ab8034eeb433701ad125dd86bf21d6c441))
+
 ## [2.0.1](https://github.com/menelai/eslint/compare/v2.0.0...v2.0.1) (2026-09-25)
 
 
