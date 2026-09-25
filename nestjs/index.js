@@ -165,7 +165,15 @@ module.exports = [
         'error',
         'none',
         {
-          overrides: { '&&': 'before', '||': 'before', '?': 'before', ':': 'before' },
+          overrides: {
+            '&&': 'before',
+            '&': 'before',
+            '||': 'before',
+            '??': 'before',
+            '|': 'before',
+            '?': 'before',
+            ':': 'before',
+          },
         },
       ],
       'no-irregular-whitespace': [
